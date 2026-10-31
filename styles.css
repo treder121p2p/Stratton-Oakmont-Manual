@@ -227,6 +227,25 @@ html[lang="de"] li.lang-de {
     display: list-item;
 }
 
+html[lang="ru"] .lang-ru {
+    display: block;
+}
+
+html[lang="ru"] span.lang-ru,
+html[lang="ru"] strong.lang-ru,
+html[lang="ru"] em.lang-ru {
+    display: inline;
+}
+
+html[lang="ru"] a.lang-ru,
+html[lang="ru"] button.lang-ru {
+    display: inline-block;
+}
+
+html[lang="ru"] li.lang-ru {
+    display: list-item;
+}
+
 @media print {
     body {
         font-size: 12pt;
@@ -311,11 +330,19 @@ html[lang="de"] td.lang-de {
     display: table-cell;
 }
 
+html[lang="ru"] td.lang-ru {
+    display: table-cell;
+}
+
 html[lang="en"] th.lang-en {
     display: table-cell;
 }
 
 html[lang="de"] th.lang-de {
+    display: table-cell;
+}
+
+html[lang="ru"] th.lang-ru {
     display: table-cell;
 }
 
@@ -349,24 +376,42 @@ html[lang="de"] th.lang-de {
 
 /* Language switching for tables */
 html[lang="en"] .performance-table th.lang-de,
+html[lang="en"] .performance-table th.lang-ru,
 html[lang="de"] .performance-table th.lang-en,
+html[lang="de"] .performance-table th.lang-ru,
+html[lang="ru"] .performance-table th.lang-en,
+html[lang="ru"] .performance-table th.lang-de,
 html[lang="en"] .objections-table th.lang-de,
-html[lang="de"] .objections-table th.lang-en {
+html[lang="en"] .objections-table th.lang-ru,
+html[lang="de"] .objections-table th.lang-en,
+html[lang="de"] .objections-table th.lang-ru,
+html[lang="ru"] .objections-table th.lang-en,
+html[lang="ru"] .objections-table th.lang-de {
     display: none;
 }
 
 html[lang="en"] .performance-table th.lang-en,
 html[lang="de"] .performance-table th.lang-de,
+html[lang="ru"] .performance-table th.lang-ru,
 html[lang="en"] .objections-table th.lang-en,
-html[lang="de"] .objections-table th.lang-de {
+html[lang="de"] .objections-table th.lang-de,
+html[lang="ru"] .objections-table th.lang-ru {
     display: table-cell;
 }
 
 /* Language switching for financial definitions */
 html[lang="en"] #financial-definitions li p strong.lang-de,
 html[lang="en"] #financial-definitions li p.lang-de,
+html[lang="en"] #financial-definitions li p strong.lang-ru,
+html[lang="en"] #financial-definitions li p.lang-ru,
 html[lang="de"] #financial-definitions li p strong.lang-en,
-html[lang="de"] #financial-definitions li p.lang-en {
+html[lang="de"] #financial-definitions li p.lang-en,
+html[lang="de"] #financial-definitions li p strong.lang-ru,
+html[lang="de"] #financial-definitions li p.lang-ru,
+html[lang="ru"] #financial-definitions li p strong.lang-en,
+html[lang="ru"] #financial-definitions li p.lang-en,
+html[lang="ru"] #financial-definitions li p strong.lang-de,
+html[lang="ru"] #financial-definitions li p.lang-de {
     display: none;
 }
 
@@ -377,11 +422,16 @@ html[lang="de"] #financial-definitions li p.lang-en {
 
 /* Update language switching for financial definitions */
 html[lang="en"] .definition p.lang-de,
-html[lang="de"] .definition p.lang-en {
+html[lang="en"] .definition p.lang-ru,
+html[lang="de"] .definition p.lang-en,
+html[lang="de"] .definition p.lang-ru,
+html[lang="ru"] .definition p.lang-en,
+html[lang="ru"] .definition p.lang-de {
     display: none;
 }
 
 html[lang="en"] .definition p.lang-en,
-html[lang="de"] .definition p.lang-de {
+html[lang="de"] .definition p.lang-de,
+html[lang="ru"] .definition p.lang-ru {
     display: block;
 } 
